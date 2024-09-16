@@ -1,0 +1,26 @@
+Key Points:
+File Identification: The script uses the file command to determine the MIME type of each file, which guides the choice of the decompression command.
+
+Supported File Types:
+
+application/gzip → gunzip
+application/x-bzip2 → bunzip2
+application/zip → unzip
+application/x-compress → uncompress
+Verbose Mode (-v): When enabled, this mode prints messages for each file that is decompressed or skipped.
+
+Recursive Mode (-r): When enabled, this mode recursively processes all files within directories.
+
+Counters:
+
+decompressed_count tracks the number of successfully decompressed files.
+not_decompressed_count tracks the number of files that could not be decompressed.
+Exit Status: The script exits with the number of files that were not decompressed.
+
+Example Usage:
+bash
+Копировать код
+./unpack.sh -r -v myfile.zip mydirectory
+This command recursively decompresses myfile.zip and all files in mydirectory, with verbose output enabled.
+
+You can easily extend the script by adding more cases in the unpack_file function to support additional file types.
