@@ -1,7 +1,7 @@
 from turtle import Turtle
 SHIFT = 20
-X_COR_LEFT = -350
-X_COR_RIGHT = 350
+# X_COR_LEFT = -350
+# X_COR_RIGHT = 350
 
 
 class Paddle(Turtle):
