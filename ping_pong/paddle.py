@@ -1,5 +1,5 @@
 from turtle import Turtle
-SHIFT = 20
+SHIFT = 40
 # X_COR_LEFT = -350
 # X_COR_RIGHT = 350
 
